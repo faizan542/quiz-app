@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showQuestion(0)">
+    <h1 id="heading">HTML <span>QUIZ</h1>
+    <div id="main">
+        <div class="counter">
+            <span id="timer">2:00</span>
+        </div>
+        <div id="test">
+            <h5 id="questionElement" class="card-title pb-3">Q1: Question goes here</h5>
+            <p class="card-text optionElement p2" onclick="putActiveClass(this)">option1 goes here</p>
+            <p class="card-text optionElement p2" onclick="putActiveClass(this)">option2 goes here</p>
+            <p class="card-text optionElement p2" onclick="putActiveClass(this)">option3 goes here</p>
+            <p class="card-text optionElement p2" onclick="putActiveClass(this)">option4 goes here</p>
+        </div>
+        <div class="card-footer text-muted">
+            <button> <a href="#" class="btn btn-theme float-right text-white" id="btn-next"
+                    onclick="nextQuestion()">Next Question</a></button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
